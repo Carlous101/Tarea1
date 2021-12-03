@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtFecNac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="7dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Fecha de Nacimiento."
+        android:inputType="date"
+        android:textAlignment="viewStart"
+        android:textColor="#137BE3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="107dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Escriba su teléfono...!"
+        android:inputType="phone"
+        android:textAlignment="viewStart"
+        android:textColor="#137BE3"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lblNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="156dp"
+        android:text="Género:  "
+        android:textAlignment="viewStart"
+        android:textColor="#292828"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblNombre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="219dp"
+        android:text="Fecha de nacimiento: "
+        android:textAlignment="viewStart"
+        android:textColor="#292828"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblNombre4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="266dp"
+        android:text="Teléfono: "
+        android:textAlignment="viewStart"
+        android:textColor="#292828"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtEtiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="18dp"
+        android:text="Primer Ejemplo Móvi"
+        android:textAlignment="center"
+        android:textColor="#963131"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="85dp"
+        android:text="Nombre: "
+        android:textAlignment="viewStart"
+        android:textColor="#292828"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:hint="Escribe tu nombre."
+        android:inputType="textPersonName|text"
+        android:textAlignment="viewStart"
+        android:textColor="#137BE3" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="312dp"
+        android:onClick="btEnviar"
+        android:text="Enviar" />
+
+
+    <RadioGroup
+        android:id="@+id/rbgGenero"
+        android:layout_width="231dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="405dp"
+        android:checkedButton="@id/rdMasculino">
+
+        <RadioButton
+            android:id="@+id/rdMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:onClick="validar"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rdFemenino"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:onClick="validar"
+            android:text="Femenino" />
+    </RadioGroup>
+
+</RelativeLayout>
